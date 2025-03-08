@@ -3,14 +3,13 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Module Documentation
-====================
-
-Overview. Provide a description of the module here.
+. include:: ../../README.rst
 
 .. toctree::
    :maxdepth: 2
-   :caption: Contents:
+   :caption: Documentation
 
    theory
+   design
    assembly
+
