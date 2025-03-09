@@ -505,7 +505,7 @@
       "gencad": "",
       "idf": "",
       "netlist": "",
-      "plot": "../plots/",
+      "plot": "../plots/noise_module",
       "pos_files": "",
       "specctra_dsn": "",
       "step": "",

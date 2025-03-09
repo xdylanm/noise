@@ -6,7 +6,7 @@
 	(paper "A4")
 	(title_block
 		(title "Random Noise")
-		(date "2025-03-08")
+		(date "2025-03-09")
 		(rev "1.1")
 		(company "idyllm")
 		(comment 1 "CC BY-SA 4.0")
@@ -4313,7 +4313,7 @@
 	)
 	(wire
 		(pts
-			(xy 36.83 22.86) (xy 36.83 36.83)
+			(xy 36.83 31.75) (xy 36.83 36.83)
 		)
 		(stroke
 			(width 0)
@@ -5427,25 +5427,6 @@
 			(justify left top)
 		)
 		(uuid "84f6011a-6f41-48f1-a861-86d1a8736af3")
-	)
-	(text_box "Increasing R6 to 150k increases bias to negative Vpk and reduces amplitude"
-		(exclude_from_sim no)
-		(at 40.64 29.21 0)
-		(size 29.21 7.62)
-		(stroke
-			(width 0)
-			(type dash)
-		)
-		(fill
-			(type none)
-		)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left top)
-		)
-		(uuid "d5342899-725c-4188-b591-cf2ba0ef6216")
 	)
 	(text "Grain"
 		(exclude_from_sim no)
@@ -11586,7 +11567,7 @@
 	)
 	(symbol
 		(lib_id "power:+12V")
-		(at 36.83 22.86 0)
+		(at 36.83 31.75 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -11595,7 +11576,7 @@
 		(fields_autoplaced yes)
 		(uuid "de01e876-8560-4b05-be57-76c2ae2cf1ed")
 		(property "Reference" "#PWR08"
-			(at 36.83 26.67 0)
+			(at 36.83 35.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11604,7 +11585,7 @@
 			)
 		)
 		(property "Value" "+12V"
-			(at 36.83 17.78 0)
+			(at 36.83 26.67 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11612,7 +11593,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 36.83 22.86 0)
+			(at 36.83 31.75 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11621,7 +11602,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 36.83 22.86 0)
+			(at 36.83 31.75 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11630,7 +11611,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+12V\""
-			(at 36.83 22.86 0)
+			(at 36.83 31.75 0)
 			(effects
 				(font
 					(size 1.27 1.27)
