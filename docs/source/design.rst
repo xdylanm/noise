@@ -75,12 +75,18 @@ There are a few references on fractional filter design, including Valsa2013, tha
 The implemented filter leaves out the additional R & C that Valsa defines to improve the phase response and force roll-off at high frequencies, so the topology is the same as the usual approximations with three branches. 
 
 .. image:: ./images/PN_filter_response.png
-  :alt: Fractional filter design and measurement.
+  :alt: Fractional LPF design and measurement.
 
 The measurement of the filtered noise was done on the buffered output of the filter (unity gain), so an offset is applied in the figure above to align the curves. In the implementation, the same gain as in MKI's design is used to restore the pink noise to approximately 10Vpp. The measured pink noise is an average of 50 traces, and the scope's (Siglent SDS-1104X-E) FFT is used to generate the spectrum, which was then digitized using `WebPlotDigitizer <https://apps.automeris.io/wpd4/>`_ to extract the values from the image. 
 
 .. image:: ./images/PN.png
   :alt: Pink noise measurement
+
+For the blue noise, the elements of the LPF are exchanged to implement a fractional HPF (FHPF) with approximately 10dB/dec of slope and a corner frequency of approximately 40kHz. To adjust the corner frequency, it's easiest just to change the resistor and compensate with gain in the output buffer. The design response and measured noise spectrum are plotted below (amplitudes are adjusted to give a visual fit).
+
+.. image:: ./images/BN_filter_response.png
+  :alt: Fractional HPF design and measurement.
+
 
 Grainy Noise
 ------------
@@ -99,13 +105,7 @@ This is a great feature from the Noise Cornucopia (MFOS), but is quite sensitive
 
 * Tuning with the 100k graininess control pot is very sensitive (TL07x as comparator; in parallel with 220k)
 
-  * it has a large deadband (0-80% of the range does nothing): the TL07x doesn't trip for offsets above about 12V
+  * it has a large deadband (0-80% of the range does nothing): the TL07x doesn't trip for offsets above about 2V
   * it goes from a few ticks to dense static in a very small range (a few %)
-  * TODO: try an anti-log taper
-
-
-Modifications
--------------
-
-#. single sided graininess (use free'd up opamp from 1)
-#. slow varying random voltage (from YuSynth) - no: build a S&H with glide
+  
+To address the last behaviour, I reduce the bridging resistor to 100k. Ideally, with the control pot at maximum, :math:`R_{eq} = 100k || 100k = 50k`. For thresholds :math:`V_{thr,+} > 2V` and :math:`V_{thr,-} < -2V`, the comparator is not triggered (even though the input voltage from the random noise signal goes above and below these thresholds). Increasing the biasing resistors to 120k sets the maximum threshold to approximately :math:`\pm 2V`. This results in more range and less sensitivity for the control pot.
