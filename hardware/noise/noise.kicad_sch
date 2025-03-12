@@ -6,8 +6,8 @@
 	(paper "A4")
 	(title_block
 		(title "Random Noise")
-		(date "2025-03-09")
-		(rev "1.1")
+		(date "2025-03-12")
+		(rev "1.2")
 		(company "idyllm")
 		(comment 1 "CC BY-SA 4.0")
 		(comment 2 "References: MFOS, Eddy Bergman, Moritz Klein")
@@ -10143,7 +10143,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P2.54mm_Vertical"
 			(at 52.324 184.404 90)
 			(effects
 				(font
@@ -12138,7 +12138,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Connector_IDC:IDC-Header_2x05_P2.54mm_Vertical"
+		(property "Footprint" "Connector_IDC:IDC-Header_2x05_P2.54mm_Horizontal"
 			(at 34.29 180.34 0)
 			(effects
 				(font
