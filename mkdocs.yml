@@ -4,10 +4,10 @@ repo_url: https://github.com/xdylanm/noise
 
 nav:
   - Home: index.md
-  - Noise and Filter Theory: 
-    - theory.md
+  - Design: 
+    - design.md
+    - Noise and Filter Theory: theory.md
     - Notebook: freq_resp.ipynb  
-  - Design Notes: design.md
   - Assembly: assembly.md
   - Schematic: assets/schematic.pdf
 

@@ -5874,7 +5874,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp yes)
+		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "0ef9ba9d-a524-49e1-9624-f59a8f05650b")
 		(property "Reference" "J6"
@@ -6375,7 +6375,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp yes)
+		(dnp no)
 		(uuid "1336bf60-4cf4-4801-9447-d709f23b2a70")
 		(property "Reference" "R32"
 			(at 154.94 167.6399 0)
@@ -7211,7 +7211,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp yes)
+		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "306ed2d5-c5ca-4791-831f-a5e658f1f342")
 		(property "Reference" "C9"

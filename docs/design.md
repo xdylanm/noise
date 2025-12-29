@@ -74,7 +74,7 @@ Changing the high-pass and gain moves this corner below 10Hz:
 The signal has a 10Vpp range with a 70mV mean and a bias of -1.5V
 (negative peaks -5.5V, positive peaks 4.0V).
 
-## Filtered Noise
+## Filters
 
 In the MFOS-inspired designs, a first order LPF (20dB/dec., 6dB/oct.) is
 used to generate low-pass noise. The YuSynth version and the design from
@@ -84,7 +84,8 @@ noise](https://en.wikipedia.org/wiki/Colors_of_noise#Pink_noise).
 
 There are a few references on fractional filter design, including
 Valsa2013, that give a procedure for generating R and C values. Using
-that as a guide (see associated Jupyter notebook), I implement a similar
+that as a guide (see details in the [fractional filter theory](./theory.md) 
+section and associated [notebook](./freq_resp.ipynb)), I implement a similar
 -10dB/dec. filter to the YuSynth and MKI designs, using a 60Hz corner
 frequency. In the figure below, I compare
 

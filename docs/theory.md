@@ -140,7 +140,7 @@ $$
 
 ### Filter Approximation
 
-Details on the filter implementation are in the [notebook](./freq_resp.ipynb).
+Details on the filter implementation are in the [notebook](./freq_resp.ipynb), including an implementation of the method described in [Valsa2013](#Valsa2013). Effectively, Valsa's method generates a similar structure to the shelf-filter approximation with an extra low-pass pole at a higher frequency (at the expense of an extra RC pair). After some simulations and testing, I chose to keep the shelf-filter approximation.
 
 
 

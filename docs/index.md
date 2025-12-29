@@ -1,5 +1,8 @@
 # Random Noise
 
+![Faceplate](./assets/images/faceplate-dark.png#only-dark){: width="64", align=right}
+![Faceplate](./assets/images/faceplate-light.png#only-light){: width="64", align=right}
+
 Sources of white and coloured random noise based on Ray Wilson's [Noise Cornucopia](https://musicfromouterspace.com/analogsynth_new/NOISECORNREV01/NOISECORNREV01.php). 
 
 * Module size: 4HP (20mm)
@@ -13,15 +16,16 @@ Sources of white and coloured random noise based on Ray Wilson's [Noise Cornucop
 
 Random noise is a signal source module with multiple line-level audio outputs:
 
-* White, pink (10dB/dec LPF with 60Hz corner) and blue (10dB/dec HPF with 10kHz corner) noise at 10Vpp
+* White noise between 10Hz and 10kHz+ with a 10Vpp output
+* Pink noise (10dB/dec fractional LPF) with 60Hz corner
+* Blue noise (10dB/dec fractional HPF) with 10kHz corner* 
 * Grains output with threshold control
 
 The grains output consists of random positive and negative impulses, creating a static sound.
 
 ## Documentation
 
-* [Noise and Filter Theory](theory.md)
-* [Design Notes](design.md)
+* [Design](design.md)
 * [Assembly Guide](assembly.md)
 * [Schematic](assets/schematic.pdf)
 
